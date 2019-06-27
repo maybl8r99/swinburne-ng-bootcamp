@@ -1,3 +1,6 @@
+Course Designer: Reuben Wee
+Company: Rajang Digital Solutions Sdn. Bhd.
+
 # Node/Express/Mongoose/Angular Workshop Source Code
 
 This is very quick workshop for beginners to experience how quickly we can spin up a client/server app.  
