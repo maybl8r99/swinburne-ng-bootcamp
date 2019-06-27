@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding:0px;
+	margin:0px;
+}
+
+.container {
+	display:grid;
+	grid-template-rows: 30px 40px auto 30px;
+}
+
+.header {
+	background-color:orange;
+	padding:5px;
+}
+
+.nav {
+	background-color:darkorange;
+	padding:2px;
+	display:grid;
+	grid-template-columns:repeat(1fr,5)
+}
+
+.footer {
+	background-color: orange;
+	padding:5px;
+}

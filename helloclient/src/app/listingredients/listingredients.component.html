@@ -1,0 +1,39 @@
+<div>
+	<div>
+		<ul>
+			<li class="dataRow" *ngFor = "let ingr of allIngredients">
+				<div>
+					<button (click)="delete(ingr)">Del</button>
+					<button (click)="edit(ingr)">Edit</button>
+				</div>
+				<div>{{ingr.ingredient}}</div>
+				<div>{{ingr.uom}}</div>
+				<div>{{ingr.amount}}</div>
+			</li>
+		</ul>
+	</div>
+
+	<div *ngIf="!showEdit">
+		<button (click)="addnew()">Add New</button>
+	</div>
+	<div *ngIf="showEdit">
+		<div>
+			<ul>
+				<li>
+					<input [(ngModel)]="formData._id" name="_id" type="hidden">
+					<input [(ngModel)]="formData.ingredient" name="ingredient" placeholder="Ingredient" type="text">
+					</li>
+				<li>
+					<input [(ngModel)]="formData.uom" name="uom" placeholder="UOM" type="text">
+				</li>
+				<li>
+					<input [(ngModel)]="formData.amount" name="amount" placeholder="Amount" type="number">
+				</li>
+			</ul>
+		</div>
+		<div>
+			<button (click)="confirmForm()">Confirm</button>
+			<button (click)="cancelForm()">Cancel</button>
+		</div>
+	</div>
+</div>
