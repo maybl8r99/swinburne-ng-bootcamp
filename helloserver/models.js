@@ -1,6 +1,6 @@
 "use strict";
 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const IngredientSchema = new mongoose.Schema({
 	ingredient:{
@@ -11,8 +11,8 @@ const IngredientSchema = new mongoose.Schema({
 	},
 	uom: String,
 	amount: Number
-})
+});
 
 module.exports = {
-	Ingredients : mongoose.model('ingredients',IngredientSchema)
+	Ingredients : mongoose.model('ingredients',IngredientSchema);
 } 
